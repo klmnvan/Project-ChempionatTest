@@ -42,6 +42,6 @@ class on_board1 : AppCompatActivity() {
             binding!!.pointSecond.background = this.getDrawable(R.drawable.shape_circle)
             binding!!.pointThird.background = this.getDrawable(R.drawable.shape_circle_blue)
             binding!!.picture.setImageDrawable(this.getDrawable(R.drawable.icon_monitor))
-        }         
+        }
     }
 }

@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.chemp_podject.databinding.ActivityInputAndRegisterBinding
 import com.example.chemp_podject.databinding.ActivityOnBoard1Binding
 
 class on_board1 : AppCompatActivity() {
@@ -15,7 +16,6 @@ class on_board1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOnBoard1Binding.inflate(layoutInflater)
         setContentView(binding!!.root)
-
         binding!!.pointFirst.setOnClickListener()
         {
             binding!!.textView2.text = "Анализы"
@@ -24,6 +24,7 @@ class on_board1 : AppCompatActivity() {
             binding!!.pointSecond.background = this.getDrawable(R.drawable.shape_circle)
             binding!!.pointThird.background = this.getDrawable(R.drawable.shape_circle)
             binding!!.picture.setImageDrawable(this.getDrawable(R.drawable.icon_analizi))
+            binding!!.textTopscreen.text = "Пропустить"
         }
         binding!!.pointSecond.setOnClickListener()
         {
@@ -33,6 +34,7 @@ class on_board1 : AppCompatActivity() {
             binding!!.pointSecond.background = this.getDrawable(R.drawable.shape_circle_blue)
             binding!!.pointThird.background = this.getDrawable(R.drawable.shape_circle)
             binding!!.picture.setImageDrawable(this.getDrawable(R.drawable.icon_yved))
+            binding!!.textTopscreen.text = "Пропустить"
         }
         binding!!.pointThird.setOnClickListener()
         {
@@ -42,6 +44,11 @@ class on_board1 : AppCompatActivity() {
             binding!!.pointSecond.background = this.getDrawable(R.drawable.shape_circle)
             binding!!.pointThird.background = this.getDrawable(R.drawable.shape_circle_blue)
             binding!!.picture.setImageDrawable(this.getDrawable(R.drawable.icon_monitor))
+            binding!!.textTopscreen.text = "Завершить"
+        }
+        binding!!.textTopscreen.setOnClickListener()
+        {
+
         }
     }
 }

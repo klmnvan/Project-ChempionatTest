@@ -88,6 +88,7 @@
         android:layout_marginHorizontal="20dp"
         android:text="Далее"
         android:textSize="17dp"
+        style="?android:buttonBarButtonStyle"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:background="@drawable/shape_button"
@@ -117,11 +118,14 @@
         android:text="Войти с Яндекс"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:fontFamily="@font/pro_display"
+        android:fontFamily="@font/lato_medium"
+        android:textSize="17dp"
+        android:textAllCaps="false"
         android:background="@drawable/shape_button_stroke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        style="?android:buttonBarButtonStyle"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

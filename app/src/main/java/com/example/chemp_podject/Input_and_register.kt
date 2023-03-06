@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import androidx.annotation.Nullable
 import androidx.core.widget.addTextChangedListener
 import com.example.chemp_podject.databinding.ActivityInputAndRegisterBinding
 import com.example.chemp_podject.databinding.ActivityOnBoard1Binding
@@ -19,7 +20,9 @@ class Input_and_register : AppCompatActivity() {
 
         binding!!.inputEmailtext.addTextChangedListener(object :TextWatcher{
             @SuppressLint("UseCompatLoadingForDrawables")
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int)
+            {
+                if
                 binding!!.buttonDalee.background = this@Input_and_register.getDrawable(R.drawable.shape_button2)
             }
 

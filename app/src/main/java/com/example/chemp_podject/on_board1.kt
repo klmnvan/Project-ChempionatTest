@@ -1,10 +1,12 @@
 package com.example.chemp_podject
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.chemp_podject.databinding.ActivityInputAndRegisterBinding
 import com.example.chemp_podject.databinding.ActivityOnBoard1Binding
 
@@ -48,7 +50,8 @@ class on_board1 : AppCompatActivity() {
         }
         binding!!.textTopscreen.setOnClickListener()
         {
-
+            val textTopscreen = Intent(this@on_board1, Input_and_register::class.java)
+            startActivity(textTopscreen)
         }
     }
 }

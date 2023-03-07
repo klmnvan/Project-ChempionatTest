@@ -91,32 +91,20 @@
             android:id="@+id/pointFirst"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="@drawable/shape_circle_blue"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></View>
+            android:background="@drawable/shape_circle_blue"></View>
 
         <View
             android:id="@+id/pointSecond"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="@drawable/shape_circle"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginHorizontal="10dp"
         ></View>
         <View
             android:id="@+id/pointThird"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:background="@drawable/shape_circle"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"></View>
+            android:background="@drawable/shape_circle"></View>
     </TableRow>
 
     <ImageView

@@ -17,68 +17,86 @@ class CreatePassword : AppCompatActivity() {
     }
     private fun init()
     {
-        if(index in 0..3) {
-            with(binding!!)
-            {
-                buttonCircle1.setOnClickListener() {
+        with(binding!!)
+        {
+            buttonCircle1.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle1.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle2.setOnClickListener() {
+            }
+            buttonCircle2.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle2.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle3.setOnClickListener() {
+            }
+            buttonCircle3.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle3.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle4.setOnClickListener() {
+            }
+            buttonCircle4.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle4.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle5.setOnClickListener() {
+            }
+            buttonCircle5.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle5.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle6.setOnClickListener() {
+            }
+            buttonCircle6.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle6.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle7.setOnClickListener() {
+            }
+            buttonCircle7.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle7.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle8.setOnClickListener() {
+            }
+            buttonCircle8.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle8.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle9.setOnClickListener() {
+            }
+            buttonCircle9.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle9.text
                     index++
                     SetPassword(index)
                 }
-                buttonCircle0.setOnClickListener() {
+            }
+            buttonCircle0.setOnClickListener() {
+                if(index in 0..3) {
                     password += buttonCircle0.text
                     index++
                     SetPassword(index)
                 }
             }
-        }
-        if(index in 1..4) {
-            binding!!.buttonClean.setOnClickListener(){
+            buttonClean.setOnClickListener(){
+                if(index in 1..4){
                 //password = password.replace() //Как удалить символ из строки???
                 //password -= buttonCircle0.text
                 password = password?.dropLast(1)
                 index--
                 SetPassword(index)
+                }
             }
         }
     }

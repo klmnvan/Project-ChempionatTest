@@ -1,5 +1,6 @@
 package com.example.chemp_podject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.chemp_podject.databinding.ActivityCreatePasswordBinding
@@ -20,84 +21,51 @@ class CreatePassword : AppCompatActivity() {
         with(binding!!)
         {
             buttonCircle1.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle1.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle1.text.toString())
             }
             buttonCircle2.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle2.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle2.text.toString())
             }
             buttonCircle3.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle3.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle3.text.toString())
             }
             buttonCircle4.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle4.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle4.text.toString())
             }
             buttonCircle5.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle5.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle5.text.toString())
             }
             buttonCircle6.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle6.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle6.text.toString())
             }
             buttonCircle7.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle7.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle7.text.toString())
             }
             buttonCircle8.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle8.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle8.text.toString())
             }
             buttonCircle9.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle9.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle9.text.toString())
             }
             buttonCircle0.setOnClickListener() {
-                if(index in 0..3) {
-                    password += buttonCircle0.text
-                    index++
-                    SetPassword(index)
-                }
+                SumPassword(buttonCircle0.text.toString())
             }
-            buttonClean.setOnClickListener(){
-                if(index in 1..4){
-                //password = password.replace() //Как удалить символ из строки???
-                //password -= buttonCircle0.text
-                password = password?.dropLast(1)
-                index--
-                SetPassword(index)
-                }
-            }
+        }
+    }
+
+    fun SumPassword(Password: String){
+        if(index in 0..3) {
+            password += Password
+            index++
+            SetPassword(index)
+        }
+        if(index == 4){
+            /*//password = password.replace() //Как удалить символ из строки???
+            //password -= buttonCircle0.text
+            password = password?.dropLast(1)
+            index--
+            SetPassword(index)*/
+            startActivity(Intent(this@CreatePassword, CreateMap::class.java))
         }
     }
 

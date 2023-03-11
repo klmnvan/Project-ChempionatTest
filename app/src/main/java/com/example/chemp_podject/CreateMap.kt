@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Size
 import android.view.View
 import android.widget.AdapterView
 import android.widget.TextView
@@ -26,7 +27,7 @@ CreateMap : AppCompatActivity() {
             ) {
                 val tv = view as TextView
                 index = position
-
+                tv.setTextSize(14F)
                 if (position === 0) {
                     // Set the hint text color gray
                     tv.setTextColor(Color.GRAY)

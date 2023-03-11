@@ -27,14 +27,14 @@
             app:srcCompat="@drawable/icon_lupa" />
 
         <EditText
-            style="?android:buttonBarButtonStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:fontFamily="@font/pro_display"
             android:gravity="center_vertical"
             android:hint="Искать анализы"
             android:padding="14dp"
-            android:textSize="16dp" />
+            android:textSize="16dp"
+            android:backgroundTint="#F5F5F9"/>
 
     </LinearLayout>
 
@@ -138,7 +138,7 @@
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
+        android:layout_height="80dp"
         android:background="@color/white"
         android:gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent">

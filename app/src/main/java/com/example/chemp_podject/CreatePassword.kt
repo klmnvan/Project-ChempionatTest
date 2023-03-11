@@ -50,6 +50,13 @@ class CreatePassword : AppCompatActivity() {
             buttonCircle0.setOnClickListener() {
                 SumPassword(buttonCircle0.text.toString())
             }
+            buttonClean.setOnClickListener(){
+                if(index in 1..3){
+                    password = password?.dropLast(1)
+                    index--
+                    SetPassword(index)
+                }
+            }
         }
     }
 

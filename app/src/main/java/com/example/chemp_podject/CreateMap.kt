@@ -12,7 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.chemp_podject.databinding.ActivityCreateMapBinding
 
 
-class CreateMap : AppCompatActivity() {
+class
+CreateMap : AppCompatActivity() {
     lateinit var binding: ActivityCreateMapBinding
     var index: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {

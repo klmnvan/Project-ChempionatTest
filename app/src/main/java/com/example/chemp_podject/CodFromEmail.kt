@@ -3,6 +3,7 @@ package com.example.chemp_podject
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.text.Editable
 import android.text.TextWatcher
 import com.example.chemp_podject.databinding.ActivityCodFromEmailBinding
@@ -18,6 +19,20 @@ class CodFromEmail : AppCompatActivity() {
         startActivity(intent)*/
         TextChanged()
         init()
+        Timer()
+    }
+
+    fun Timer(){
+        val timer = object : CountDownTimer(60000,1000){
+            override fun onTick(millisUntilFinished: Long) {
+                val elapsedSeconds = millisUntilFinished / 1000
+                binding!!.otchetTime.text = "Отправить код повторно можно \nбудет через ${elapsedSeconds} секунд"
+            }
+            override fun onFinish() {
+
+            }
+        }
+        timer.start()
     }
     fun TextChanged()
     {

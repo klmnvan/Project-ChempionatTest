@@ -8,6 +8,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import androidx.annotation.Nullable
 import androidx.core.widget.addTextChangedListener
+import com.example.chemp_podject.Fragment.BottomSheetFragment
 import com.example.chemp_podject.databinding.ActivityInputAndRegisterBinding
 import com.example.chemp_podject.databinding.ActivityOnBoard1Binding
 

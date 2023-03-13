@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.chemp_podject.Fragment.BottomSheetFragment
 import com.example.chemp_podject.api.*
 import com.example.chemp_podject.databinding.ActivityHomeBinding
 import kotlinx.coroutines.CoroutineScope
@@ -15,10 +16,10 @@ import retrofit2.Retrofit
 import retrofit2.awaitResponse
 import retrofit2.converter.gson.GsonConverterFactory
 
-class Home : AppCompatActivity() {
+class Home : AppCompatActivity(),AdapterBlock.Listener{
     private var binding: ActivityHomeBinding? = null
     private val adapterNews = AdapterNews()
-    private  val adapterBlock = AdapterBlock()
+    private  val adapterBlock = AdapterBlock(this)
     private val adapterCategory = AdapterCategory()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -99,5 +100,9 @@ class Home : AppCompatActivity() {
                 }
             }
         }
+    }
+    override fun OnClick(block: BlockModel) {
+        val bottomSheetFragment = BottomSheetFragment()
+        bottomSheetFragment.show(supportFragmentManager,"Tag")
     }
 }

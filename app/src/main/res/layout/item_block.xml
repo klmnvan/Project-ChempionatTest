@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="335dp"
-        android:layout_height="136dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/shape_button_stroke"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,18 +24,18 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/text_check_up"
-                android:layout_width="wrap_content"
+                android:id="@+id/TextNameBlock"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/pro_display"
-                android:text="ПЦР-тест на определение РНК \nкоронавируса стандартный"
+                android:text="ПЦР-тест на определение РНК коронавируса стандартный"
                 android:textColor="@color/black"
                 android:textSize="16dp" />
 
             <TextView
-                android:id="@+id/text_issled"
+                android:id="@+id/TextTimeResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -47,9 +47,10 @@
                 android:textSize="14dp" />
 
             <TextView
-                android:id="@+id/text_summa"
+                android:id="@+id/TextPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/pro_display"
                 android:text="1800 ₽"
@@ -58,8 +59,10 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/ButtonInBlock"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            style="?buttonBarButtonStyle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="16dp"
